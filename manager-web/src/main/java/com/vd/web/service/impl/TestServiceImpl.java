@@ -6,6 +6,8 @@ import com.vd.web.service.TestService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -16,7 +18,13 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<Student> getAll() {
-        return testMapper.selectAll();
+       // return testMapper.selectAll();
+        Student student = new Student();
+        student.setSName("456hahahaha,范蛇皮");
+        student.setSNo(456);
+        student.setSAge(new Date());
+
+        return Arrays.asList(student);
     }
 
 

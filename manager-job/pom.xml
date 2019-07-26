@@ -8,8 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-
-    <artifactId>job</artifactId>
+    <artifactId>manager-job</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>job</name>
@@ -21,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.vd</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>manager-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

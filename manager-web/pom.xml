@@ -8,8 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-
-    <artifactId>web</artifactId>
+    <artifactId>manager-web</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>web</name>
@@ -46,26 +45,31 @@
         <!-- other package -->
         <dependency>
             <groupId>com.vd</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>manager-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vd</groupId>
+            <artifactId>manager-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- thymeleaf -->
-       <!-- <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        <!-- <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+         </dependency>
 
-        <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-            <version>${nekohtml.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.theborakompanioni</groupId>
-            <artifactId>thymeleaf-extras-shiro</artifactId>
-            <version>${thymeleaf-shiro.version}</version>
-        </dependency>-->
+         <dependency>
+             <groupId>net.sourceforge.nekohtml</groupId>
+             <artifactId>nekohtml</artifactId>
+             <version>${nekohtml.version}</version>
+         </dependency>
+         <dependency>
+             <groupId>com.github.theborakompanioni</groupId>
+             <artifactId>thymeleaf-extras-shiro</artifactId>
+             <version>${thymeleaf-shiro.version}</version>
+         </dependency>-->
         <!-- thymeleaf end -->
 
         <!--验证码 -->

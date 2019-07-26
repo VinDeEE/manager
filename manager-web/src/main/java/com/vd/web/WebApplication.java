@@ -8,6 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Desc:
@@ -17,7 +18,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication(exclude = {MybatisAutoConfiguration.class})
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
-@ComponentScan(basePackages = {"com.vd.web","com.vd.common"})
+@ComponentScan(basePackages = {"com.vd.web","com.vd.common","com.vd.api.web"})
+@EnableSwagger2
 public class WebApplication extends SpringBootServletInitializer {
 
     @Override
