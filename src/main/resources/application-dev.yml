@@ -1,0 +1,90 @@
+### 开发环境 ###
+spring:
+  # 数据库配置(mysql)
+  datasource:
+    master:
+#      jdbc-url: jdbc:mysql://localhost:3306/manager?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull
+#      username: root
+#      password: root
+      # 本地
+      jdbc-url: jdbc:mysql://localhost:3306/manager?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull
+      username: root
+      password: root
+      minimum-idle: 10
+      # 连接池中允许的最大连接数
+      maximum-pool-size: 50
+      connection-test-query: SELECT 1
+      # 生效超时时间(毫秒) 默认5秒
+      validation-timeout: 5000
+      # 是否只读
+      read-only: false
+      # 等待连接池分配连接的最大时长(毫秒) 默认30秒
+      connection-timeout: 60000
+      # 一个连接idle状态的最大时长(毫秒) 默认10分钟
+      idle-timeout: 160000
+      # 一个连接的生命时长(毫秒) 默认30分钟
+      max-lifetime: 600000
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.zaxxer.hikari.util.DriverDataSource
+
+    read:
+      # 本地
+      jdbc-url: jdbc:mysql://localhost:3306/manager?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull
+      username: root
+      password: root
+#      jdbc-url: jdbc:mysql://localhost:3306/platform?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull
+#      username: root
+#      password: root
+      minimum-idle: 10
+      # 连接池中允许的最大连接数
+      maximum-pool-size: 50
+      connection-test-query: SELECT 1
+      # 生效超时时间(毫秒) 默认5秒
+      validation-timeout: 5000
+      # 是否只读
+      read-only: false
+      # 等待连接池分配连接的最大时长(毫秒) 默认30秒
+      connection-timeout: 60000
+      # 一个连接idle状态的最大时长(毫秒) 默认10分钟
+      idle-timeout: 160000
+      # 一个连接的生命时长(毫秒) 默认30分钟
+      max-lifetime: 600000
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.zaxxer.hikari.util.DriverDataSource
+
+#  redis:
+#    # 195
+#    database: 4
+#    host: 47.103.59.195
+#    password: jiuniuss123
+#    port: 6379
+#    jedis:
+#      pool:
+#        max-idle: 50
+#        min-idle: 1
+#        max-active: 500
+#        max-wait: -1
+  http:
+    encoding:
+      charset: UTF-8
+  #aop配置
+  aop:
+    proxy-target-class: true
+  #thymeleaf 支持
+#  thymeleaf:
+#    #页面缓存
+#    cache: false
+#    mode: LEGACYHTML5
+#    encoding: utf-8
+
+# job 配置
+ssJob:
+  url:
+    # 测试
+#    prefix: http://47.103.59.195:8180/plat-webJob/report/
+#    statPrefix: http://47.103.59.195:8180/plat-webJob/ls/caseStat/
+    flag: true
+    # 本地
+    prefix: http://localhost:8889/plat-webJob/report/
+    statPrefix: http://localhost:8889/plat-webJob/ls/caseStat/
+
