@@ -1,4 +1,4 @@
-package com.vd.common.data.model.dto;
+package com.vd.common.data.model.entity;
 
 
 import lombok.Data;
@@ -20,7 +20,7 @@ import java.util.Date;
 public class Student implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer sID;//主键
+    private Integer sNo;//主键
     private String sName;//
     private String sSex;
     private Date sAge;

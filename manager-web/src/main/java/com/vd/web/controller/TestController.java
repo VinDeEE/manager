@@ -1,6 +1,6 @@
 package com.vd.web.controller;
 
-import com.vd.common.data.model.dto.Student;
+import com.vd.common.data.model.entity.Student;
 import com.vd.web.service.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
