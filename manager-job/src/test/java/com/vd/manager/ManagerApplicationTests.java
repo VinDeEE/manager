@@ -1,4 +1,4 @@
-package com.manager.server;
+package com.vd.manager;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

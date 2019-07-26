@@ -1,4 +1,4 @@
-package com.manager.server;
+package com.vd.manager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
