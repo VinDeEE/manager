@@ -1,9 +1,9 @@
 package com.vd.web.service;
 
-import com.vd.common.data.model.entity.Student;
+import com.vd.common.data.model.entity.Stu;
 
 import java.util.List;
 
 public interface TestService {
-    List<Student> getAll();
+    List<Stu> getAll();
 }

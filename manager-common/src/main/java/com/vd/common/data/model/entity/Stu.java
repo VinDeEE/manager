@@ -1,10 +1,8 @@
 package com.vd.common.data.model.entity;
 
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,13 +16,14 @@ import java.util.Date;
  * Author: VinDe
  * Date: Create in 2019/7/26
  */
-@Table(name = "Student")
+@Table(name = "Stu")
 @Data
-public class Student implements Serializable {
+public class Stu implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer sNo;//主键
     private String sName;//
     private String sSex;
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     private Date sAge;
 }

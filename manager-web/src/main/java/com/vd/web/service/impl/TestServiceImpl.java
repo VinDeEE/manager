@@ -1,7 +1,7 @@
 package com.vd.web.service.impl;
 
 import com.vd.common.data.mapper.read.TestMapper;
-import com.vd.common.data.model.entity.Student;
+import com.vd.common.data.model.entity.Stu;
 import com.vd.web.service.TestService;
 import org.springframework.stereotype.Service;
 
@@ -17,14 +17,14 @@ public class TestServiceImpl implements TestService {
     private TestMapper testMapper;
 
     @Override
-    public List<Student> getAll() {
-       // return testMapper.selectAll();
-        Student student = new Student();
+    public List<Stu> getAll() {
+        return testMapper.selectAll();
+/*        Stu student = new Stu();
         student.setSName("456hahahaha,范蛇皮");
         student.setSNo(456);
         student.setSAge(new Date());
 
-        return Arrays.asList(student);
+        return Arrays.asList(student);*/
     }
 
 
