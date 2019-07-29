@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@Api(value = "测试接口", description = "测试11接口")
+@Api(value = "tast测试接口", description = "测试11接口")
 public interface ControllerApi {
     @ApiOperation("查找全部")
-    @GetMapping("/")
     public List<Student> getAll();
 }

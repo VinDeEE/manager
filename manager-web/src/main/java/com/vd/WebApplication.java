@@ -1,4 +1,4 @@
-package com.vd.web;
+package com.vd;
 
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication(exclude = {MybatisAutoConfiguration.class})
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
-@ComponentScan(basePackages = {"com.vd.web","com.vd.common","com.vd.api.web"})
+@ComponentScan(basePackages = {"com.vd.web","com.vd.common","com.vd.api.web","com.vd"})
 @EnableSwagger2
 public class WebApplication extends SpringBootServletInitializer {
 
