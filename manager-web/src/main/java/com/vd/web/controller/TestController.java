@@ -5,6 +5,7 @@ import com.vd.common.data.model.entity.Stu;
 import com.vd.web.service.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +20,7 @@ public class TestController implements ControllerApi {
     @Resource
     private TestService testService;
 
-    @RequestMapping("/getAll")
+    @GetMapping("/getAll")
     @Override
     public List<Stu> getAll() {
         log.info("into");
